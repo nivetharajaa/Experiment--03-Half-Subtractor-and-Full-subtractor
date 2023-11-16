@@ -38,14 +38,15 @@ STEP 5: End the verilog program using keyword endmodule
 
 
 ## Program:
-/*
+
 Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming.
+
 Developed by:NIVETHA A 
+
 RegisterNumber:212222230101  
-*/
 
 ## Half Subtractor:
-
+```
 module exp4(a,b,diff,borr);
 
 input a,b;
@@ -57,9 +58,9 @@ assign diff = (a^b);
 assign borr = ((~a)&b);
 
 endmodule
-
+```
 ## Full Subtractor:
-
+```
 module fullsubtractor(a,b,bin,diff,borr);
 
 input a,b,bin;
@@ -71,9 +72,9 @@ assign diff=(a^b^bin);
 assign borr=(~a&(b)|(b&bin)|((~a)&bin));
 
 endmodule
-
+```
 ## Output:
-## Truthtable
+## 1.RTL
 ## Half Subtractor:
 
 ![image](https://github.com/nivetharajaa/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/120543388/fd58751e-a15b-4e13-84de-74097b3d9488)
@@ -81,17 +82,15 @@ endmodule
 ## Full Subtractor:
 
 ![image](https://github.com/nivetharajaa/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/120543388/32becfae-2aef-412a-bdfc-3d14b16e92fb)
-
-##  RTL realization
-## Half Subtractor:
+## 2.TRUTH TABLE
+## HALF ADDER:
 ![image](https://github.com/nivetharajaa/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/120543388/aa3ed8a8-6944-46bd-97a9-668c6ae9057e)
-## Full Subtractor:
+## Full ADDER:
 ![image](https://github.com/nivetharajaa/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/120543388/3628beb8-96f3-477c-9d31-024269f6b66f)
-
-## Timing diagram 
-## Half Subtractor:
+## 3.WAVEFORM
+## Half ADDER:
 ![image](https://github.com/nivetharajaa/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/120543388/c79bfc20-a6cd-4d13-b99b-7eff3b235fe6)
-## Full Subtractor:
+## Full ADDER:
 ![image](https://github.com/nivetharajaa/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/120543388/2fa27a66-8d7d-4ee0-9025-e58dbe916345)
 
 ## Result:
